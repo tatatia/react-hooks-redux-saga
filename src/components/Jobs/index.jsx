@@ -1,11 +1,14 @@
-import api from 'modules/api/api';
+import useFetch from 'hooks/useFetch';
 import { JOBS } from 'modules/api/endpoints';
 import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
 
 export default function Jobs() {
-    const state = useSelector(state => state)
-    console.log(state)
+    const { response, performFetch } = useFetch(JOBS)
+
+    useEffect(() => {
+        performFetch()
+    }, [performFetch])
+    console.log(response)
     return (
         <div>
             Jobs Component
