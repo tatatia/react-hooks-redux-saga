@@ -25,7 +25,7 @@ export default function ProfileCard({ src, title, subSpecialties }) {
     <div>
       <Card className={classes.root}>
         <div className={classes.avatar}>
-          <Avatar alt={title} src={src} />
+          <Avatar alt={title} src="https://html5css.ru/howto/img_avatar.png" />
         </div>
         <div>
           <CardContent className={classes.content}>
