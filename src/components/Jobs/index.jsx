@@ -11,5 +11,5 @@ export default function Jobs() {
         performFetch()
     }, [performFetch])
 
-    return <Navigation loading={loading} services={data} title={'react + redux + redux-saga app'} />
+    return <Navigation loading={loading} services={data} title={'Search for people by profession'} />
 }
